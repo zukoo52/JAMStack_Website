@@ -2,7 +2,12 @@
   <header class="header">
     <div class="logoImage">
       <NuxtLink to="/mainPage">
-        <img src="@/assets/image/food.png" class="logo" alt="Food Logo">
+        <img src="@/assets/image/food.png" class="logo">
+      </NuxtLink>
+      <NuxtLink to="/mainPage">
+        <p class="logo-title">
+          {{ $store.state.siteproperties.sitename }}
+        </p>
       </NuxtLink>
     </div>
     <nav class="menu">
@@ -14,7 +19,7 @@
           <nuxt-link exact-active-class="active" to="/Contact">Contact US</nuxt-link>
         </li>
         <li>
-          <nuxt-link exact-active-class="active" to="/my-team.vue">Team Info</nuxt-link>
+          <nuxt-link exact-active-class="active" to="/my-team">Team Info</nuxt-link>
         </li>
       </ul>
     </nav>
